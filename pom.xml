@@ -89,7 +89,6 @@
 			<version>2.3.0</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 	<finalName>springboot-javatechi</finalName>
 		<plugins>
@@ -119,5 +118,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
