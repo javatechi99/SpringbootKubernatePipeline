@@ -5,16 +5,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: springboot-k8s-kubernates
+      app: springboot-k8s-javatechi
   replicas: 4
   template:
     metadata:
       labels:
-        app: springboot-k8s-kubernates
+        app: springboot-k8s-javatechi
     spec:
       containers:
         - name: springboot-docker-kubernate
-          image: springboot-javatechi:1.0
+          image: springboot-javatechi-kubenates:1.0
           ports:
             - containerPort: 8080
           env:   # Setting Enviornmental Variables
@@ -50,7 +50,7 @@ metadata: # Metadata of the resource kind we are creating
   name: springboot-crud-svc
 spec:
   selector:
-    app: springboot-k8s-kubernates
+    app: springboot-k8s-javatechi
   ports:
     - protocol: "TCP"
       port: 8080 # The port that the service is running on in the cluster
